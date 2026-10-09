@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Mahabur Hossain </title>
+
+<!-- Favicon -->
+<link rel="icon" href="favicon_icon.png">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0,255,255,0.1);
+    animation: fadeIn 1s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(30px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+/* Profile */
+.profile img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 3px solid #00ffff;
+    margin-bottom: 15px;
+}
+
+/* Name */
+h1 {
+    font-size: 1.8rem;
+    color: #00ffff;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* Links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255,255,255,0.08);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Icons */
+.links a img {
+    width: 26px;
+    height: 26px;
+}
+
+/* Glow hover */
+.links a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #00ffff, #00c3ff);
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.links a:hover::before {
+    width: 100%;
+}
+
+.links a span {
+    position: relative;
+    z-index: 1;
+}
+
+.links a img {
+    position: relative;
+    z-index: 1;
+}
+
+.links a:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* Responsive */
+@media(max-width:480px){
+    h1 {font-size:1.5rem;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <!-- Profile -->
+        <div class="profile">
+            <img src="mahabur.jpeg" alt="profile">
+        </div>
+
+        <h1>Mahabur Hossain</h1>
+        <p>Let's connect with me through your favorite platform </p>
+
+        <!-- Links -->
+        <div class="links">
+
+            <a href="https://wa.me/8801780675495" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png">
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://wa.me/8801611168904" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png">
+                <span>WhatsApp</span>
+            </a>
+
+            <a href="https://facebook.com/bdmahabur" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png">
+                <span>Facebook</span>
+            </a>
+
+            <!-- ✅ Correct Messenger -->
+            <a href="https://m.me/bdmahabur" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968771.png">
+                <span>Messenger</span>
+            </a>
+
+            <a href="https://instagram.com/mahaburhossain" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png">
+                <span>Instagram</span>
+            </a>
+
+            <!-- ✅ Correct Pinterest -->
+            <a href="https://www.pinterest.com/mahabur_hossain/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png">
+                <span>Pinterest</span>
+            </a>
+
+            <a href="mailto:mahaburhossain8@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png">
+                <span>Email</span>
+            </a>
+            
+            <a href="mailto:contact@mahabur.pro.bd">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png">
+                                            <span>WebMail</span>
+                                                        </a>
+            <a href="tel:+8801781040050">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png">
+                <span>Call</span>
+            </a>
+
+        </div>
+
+        <footer>
+            © 2026 Mahabur Hossain
+        </footer>
+
+    </div>
+</div>
+
+</body>
+</html>
